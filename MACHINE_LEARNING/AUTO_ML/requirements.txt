@@ -1,0 +1,10 @@
+autokeras
+auto-sklearn
+keras
+numpy 
+sklearn
+tpot
+tqdm 
+tensorflow
+pandas
+xgboost
