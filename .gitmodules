@@ -1,5 +1,5 @@
 
 [submodule "LANGCHAIN"]
 	path = LANGCHAIN
-	url = ../LANGCHAIN.git
-	#branch = main
+	url = https://github.com/jpbianchi/LANGCHAIN.git
+	branch = main
