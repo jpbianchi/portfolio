@@ -10,9 +10,8 @@ def main():
     os.chdir(cwd1 + '/' + 'PODCAST/1')
     cwd = os.getcwd()
     
-    st.sidebar.subheader("Debug box1")
-    debug_text_area1 = st.sidebar.empty()
-    debug_text_area1.text_area("cwd", value=cwd, height=20)
+    #st.sidebar.subheader("Debug box1")
+    st.sidebar.text_area("cwd", value=cwd, height=20)
 
     if 'PORTFOLIO' in cwd:
         pth = cwd.split('PORTFOLIO')[1]
@@ -20,9 +19,9 @@ def main():
         pth = cwd.split('portfolio')[1]
     pth = Path(pth)    
     
-    pth = 'PODCAST/1/'
-    st.sidebar.subheader("Debug box2")
-    st.sidebar.text_area("pth:", value=cwd + '/' + pth, height=20)
+    #pth = 'PODCAST/1/'
+    #st.sidebar.subheader("Debug box2")
+    #st.sidebar.text_area("pth:", value=cwd + '/' + pth, height=20)
     
     # Inject custom CSS to set the background color
     st.markdown(
@@ -122,7 +121,7 @@ def main():
     
     st.title("🎙️ Week's Pod Spark!")
     
-    available_podcast_info = create_dict_from_json_files('.')
+    available_podcast_info = create_dict_from_json_files(cwd)
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
