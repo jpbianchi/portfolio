@@ -8,7 +8,7 @@ def main():
 
     cwd1 = os.getcwd()
     os.chdir(cwd1)
-    cwd = os.getcwd()
+    cwd = os.chdir()
     if 'PORTFOLIO' in cwd:
         pth = cwd.split('PORTFOLIO')[1]
     else:
@@ -18,7 +18,7 @@ def main():
     debug_text_area1 = st.sidebar.empty()
     debug_text_area1.text_area("cwd", value=cwd, height=20)
 
-    pth = '/PODCAST/1/'
+    pth = 'PODCAST/1/'
     st.sidebar.subheader("Debug box2")
     st.sidebar.text_area("pth:", value=pth, height=20)
     
