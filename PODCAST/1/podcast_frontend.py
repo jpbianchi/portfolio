@@ -8,11 +8,20 @@ def main():
 
     cwd = os.getcwd()
     if 'PORTFOLIO' in cwd:
-        curdir = cwd.split('PORTFOLIO')[1]
+        pth = cwd.split('PORTFOLIO')[1]
     else:
-        curdir = cwd.split('portfolio')[1]
-    pth = Path(curdir)
-        
+        pth = cwd.split('portfolio')[1]
+    pth = Path(pth)    
+    st.sidebar.subheader("cwd")
+    debug_text_area1 = st.sidebar.empty()
+    debug_text_area1.text_area("cwd", value=cwd, height=200)
+
+    st.sidebar.subheader("pth")
+    debug_text_area2 = st.sidebar.empty()
+
+    debug_text_area2.text_area("pth:", value=pth, height=200)
+
+
     # Inject custom CSS to set the background color
     st.markdown(
         """
@@ -107,7 +116,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.image(pth / 'bg-image.jpg', use_column_width=True)
+    st.image(Path(pth / 'bg-image.jpg'), use_column_width=True)
     
     st.title("🎙️ Week's Pod Spark!")
     
