@@ -271,11 +271,11 @@ def main():
 
 def create_dict_from_json_files(folder_path):
     st.sidebar.text_area("lisdir(folder_path):", value=os.listdir(folder_path), height=50)
-    json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
+    json_files = [os.path.join(os.getcwd(), f) for f in os.listdir(folder_path) if f.endswith('.json')]
     data_dict = {}
 
     for file_name in json_files:
-        file_path = os.path.join(os.getcwd(), file_name)
+        file_path = file_name
         st.sidebar.text_area("filename:", value=file_path, height=50)
         with open(file_path, 'r') as file:
             podcast_info = json.load(file)
