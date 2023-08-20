@@ -14,11 +14,11 @@ def main():
     pth = Path(pth)    
     st.sidebar.subheader("Debug box1")
     debug_text_area1 = st.sidebar.empty()
-    debug_text_area1.text_area("cwd", value=cwd, height=50)
+    debug_text_area1.text_area("cwd", value=cwd, height=20)
 
     st.sidebar.subheader("Debug box2")
-    st.sidebar.text_area("pth:", value=pth, height=50)
-
+    st.sidebar.text_area("pth:", value=pth, height=20)
+    pth = 'PODCAST/1/'
 
     # Inject custom CSS to set the background color
     st.markdown(
@@ -114,7 +114,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.image(Path(pth / 'bg-image.jpg'), use_column_width=True)
+    st.image(pth + 'bg-image.jpg', use_column_width=True)
     
     st.title("🎙️ Week's Pod Spark!")
     
