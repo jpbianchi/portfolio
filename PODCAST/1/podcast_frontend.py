@@ -20,10 +20,10 @@ def main():
         pth = cwd.split('portfolio')[1]
     pth = Path(pth)    
     
-    st.sidebar.subheader("Debug box2")
-    st.sidebar.text_area("pth:", value=pth, height=20)
     pth = 'PODCAST/1/'
-
+    st.sidebar.subheader("Debug box2")
+    st.sidebar.text_area("pth:", value=cwd + '/' + pth, height=20)
+    
     # Inject custom CSS to set the background color
     st.markdown(
         """
