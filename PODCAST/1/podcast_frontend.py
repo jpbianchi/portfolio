@@ -270,6 +270,7 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
 def create_dict_from_json_files(folder_path):
+    st.sidebar.text_area("lisdir(folder_path):", value=os.listdir(folder_path), height=20)
     json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
     data_dict = {}
 
