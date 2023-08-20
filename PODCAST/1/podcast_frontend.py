@@ -12,14 +12,12 @@ def main():
     else:
         pth = cwd.split('portfolio')[1]
     pth = Path(pth)    
-    st.sidebar.subheader("cwd")
+    st.sidebar.subheader("Debug box1")
     debug_text_area1 = st.sidebar.empty()
-    debug_text_area1.text_area("cwd", value=cwd, height=200)
+    debug_text_area1.text_area("cwd", value=cwd, height=50)
 
-    st.sidebar.subheader("pth")
-    debug_text_area2 = st.sidebar.empty()
-
-    debug_text_area2.text_area("pth:", value=pth, height=200)
+    st.sidebar.subheader("Debug box2")
+    st.sidebar.text_area("pth:", value=pth, height=50)
 
 
     # Inject custom CSS to set the background color
