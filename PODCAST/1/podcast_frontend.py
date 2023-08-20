@@ -278,7 +278,11 @@ def create_dict_from_json_files(folder_path):
         file_path = file_name
         st.sidebar.text_area("filename:", value=file_path, height=50)
         with open(file_path, 'r') as file:
-            podcast_info = json.load(file)
+            try:
+                podcast_info = json.load(file)
+                st.sidebar.text_area("Read file correctly:", value=file_path, height=20)
+            except json.JSONDecodeError:
+                st.sidebar.text_area("Error reading file:", value=file_path, height=20)
             podcast_name = podcast_info['podcast_details']['podcast_title']
             # Process the file data as needed
             data_dict[podcast_name] = podcast_info
