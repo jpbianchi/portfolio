@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+	<channel>
+		<title><![CDATA[The Defiant - DeFi Podcast]]></title>
+		<description><![CDATA[The internet of money is being built with blockchain technology and without banks. We call it DeFi, short for Decentralized Finance, and this is where you can hear the builders and users of this cutting edge world tell their stories first hand. Hosted by Camila Russo.
+]]></description>
+		<link>https://thedefiant.io/</link>
+		<image>
+			<url>https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/4586201/4586201-1652728945243-fb228ed7cf207.jpg</url>
+			<title>The Defiant - DeFi Podcast</title>
+			<link>https://thedefiant.io/</link>
+		</image>
+		<generator>Anchor Podcasts</generator>
+		<lastBuildDate>Sat, 19 Aug 2023 14:04:12 GMT</lastBuildDate>
+		<atom:link href="https://anchor.fm/s/1bee9344/podcast/rss" rel="self" type="application/rss+xml"/>
+		<author><![CDATA[Camila Russo]]></author>
+		<copyright><![CDATA[Camila Russo]]></copyright>
+		<language><![CDATA[en]]></language>
+		<atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+		<itunes:author>Camila Russo</itunes:author>
+		<itunes:summary>The internet of money is being built with blockchain technology and without banks. We call it DeFi, short for Decentralized Finance, and this is where you can hear the builders and users of this cutting edge world tell their stories first hand. Hosted by Camila Russo.
+</itunes:summary>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>Camila Russo</itunes:name>
+			<itunes:email>admin@thedefiant.io</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:category text="Technology"/>
+		<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/4586201/4586201-1652728945243-fb228ed7cf207.jpg"/>
+		<item>
+			<title><![CDATA[Base: Coinbase's New Layer 2 Kicks Off]]></title>
+			<description><![CDATA[<p>Jesse Pollak, senior director of Engineering at Coinbase, is the creator of Base, which is a Layer 2 scaling solution from Coinbase that launched last week. </p>
+<p>Base has quickly become a trending topic this summer, attracting more than $200M of value in its short life. Coinbase is the world’s second-largest crypto centralized exchange by volume, and now it’s moving to the on-chain world, so it’s worth watching. </p>
+<p>In our conversation, we dive into the origin story of Base, why opt for a Layer 2 and not start a new Layer 1, why go for Optimistic rollups, how Base is unique in the already crowded Layer 2 space, their decentralization road map and more. </p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/thedefiant/episodes/Base-Coinbases-New-Layer-2-Kicks-Off-e283psb</link>
+			<guid isPermaLink="false">8473a0bb-e334-439a-a841-3be8b314ede6</guid>
+			<dc:creator><![CDATA[Camila Russo]]></dc:creator>
+			<pubDate>Mon, 14 Aug 2023 19:00:39 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/1bee9344/podcast/play/74622283/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-7-14%2F343058039-44100-2-64760c8a8299.mp3" length="49448750" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Jesse Pollak is the creator of Base, which is a Layer 2 scaling solution from Coinbase that launched last week. &lt;/p&gt;
+&lt;p&gt;Base has quickly become a trending topic this summer, attracting more than $200M of value in its short life. Coinbase is the world’s second-largest crypto centralized exchange by volume, and now it’s moving to the on-chain world, so it’s worth watching. &lt;/p&gt;
+&lt;p&gt;In our conversation, we dive into the origin story of Base, why opt for a Layer 2 and not start a new Layer 1, why go for Optimistic rollups, how Base is unique in the already crowded Layer 2 space, their decentralization road map and more. &lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:51:30</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/4586201/4586201-1692039610047-02f94958dbaab.jpg"/>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+	</channel>
+</rss>
