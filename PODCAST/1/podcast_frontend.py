@@ -99,12 +99,12 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.image('bg-image.jpg', use_column_width=True)
+    st.image('PODCAST/1/bg-image.jpg', use_column_width=True)
     
     st.title("🎙️ Week's Pod Spark!")
     
     
-    available_podcast_info = create_dict_from_json_files('.')
+    available_podcast_info = create_dict_from_json_files('PODCAST/1/')
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
