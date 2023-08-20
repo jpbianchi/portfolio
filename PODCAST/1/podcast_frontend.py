@@ -270,19 +270,21 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
 def create_dict_from_json_files(folder_path):
-    st.sidebar.text_area("lisdir(folder_path):", value=os.listdir(folder_path), height=50)
-    json_files = [os.path.join(os.getcwd(), f) for f in os.listdir(folder_path) if f.endswith('.json')]
+    #st.sidebar.text_area("lisdir(folder_path):", value=os.listdir(folder_path), height=50)
+    json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
     data_dict = {}
 
     for file_name in json_files:
         file_path = file_name
-        st.sidebar.text_area("filename:", value=file_path, height=50)
+        #st.sidebar.text_area("filename:", value=file_path, height=50)
         with open(file_path, 'r') as file:
             try:
                 podcast_info = json.load(file)
-                st.sidebar.text_area("Read file correctly:", value=file_path, height=20)
+                #st.sidebar.text_area("Read file correctly:", value=file_path, height=10)
             except json.JSONDecodeError:
-                st.sidebar.text_area("Error reading file:", value=file_path, height=20)
+                # the twiml AI podcast.json file was bad 
+                st.sidebar.text_area("Error reading file:", value=file_path, height=10)
+                continue
             podcast_name = podcast_info['podcast_details']['podcast_title']
             # Process the file data as needed
             data_dict[podcast_name] = podcast_info
