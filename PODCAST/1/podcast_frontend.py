@@ -6,6 +6,8 @@ import os
 
 def main():
 
+    cwd1 = os.getcwd()
+    os.chdir(cwd1)
     cwd = os.getcwd()
     if 'PORTFOLIO' in cwd:
         pth = cwd.split('PORTFOLIO')[1]
