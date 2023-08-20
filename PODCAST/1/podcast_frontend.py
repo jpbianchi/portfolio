@@ -16,9 +16,10 @@ def main():
     debug_text_area1 = st.sidebar.empty()
     debug_text_area1.text_area("cwd", value=cwd, height=20)
 
+    pth = '/PODCAST/1/'
     st.sidebar.subheader("Debug box2")
     st.sidebar.text_area("pth:", value=pth, height=20)
-    pth = 'PODCAST/1/'
+    
 
     # Inject custom CSS to set the background color
     st.markdown(
@@ -118,12 +119,10 @@ def main():
     
     st.title("🎙️ Week's Pod Spark!")
     
-    
     available_podcast_info = create_dict_from_json_files(pth)
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
-  
     
     # Dropdown box
     st.sidebar.subheader("Available Podcasts Feeds")
