@@ -275,7 +275,7 @@ def create_dict_from_json_files(folder_path):
     data_dict = {}
 
     for file_name in json_files:
-        file_path = os.path.join(folder_path, file_name)
+        file_path = os.path.join(os.getcwd(),os.path.join(folder_path, file_name))
         st.sidebar.text_area("filename:", value=file_path, height=50)
         with open(file_path, 'r') as file:
             podcast_info = json.load(file)
