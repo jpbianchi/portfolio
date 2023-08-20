@@ -6,8 +6,8 @@ import os
 
 def main():
 
-    cwd1 = os.getcwd()
-    os.chdir(cwd1)
+    # cwd1 = os.getcwd()
+    # os.chdir(cwd1)
     cwd = os.getcwd()
     if 'PORTFOLIO' in cwd:
         pth = cwd.split('PORTFOLIO')[1]
@@ -121,7 +121,7 @@ def main():
     
     st.title("🎙️ Week's Pod Spark!")
     
-    available_podcast_info = create_dict_from_json_files(pth)
+    available_podcast_info = create_dict_from_json_files(cwd)
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
