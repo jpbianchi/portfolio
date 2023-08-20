@@ -298,3 +298,5 @@ def process_podcast(url):
 
 if __name__ == '__main__':
     main()
+
+# get into venv and run streamlit run podcast_frontend.py --server.allowRunOnSave True
