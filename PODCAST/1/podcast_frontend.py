@@ -13,11 +13,11 @@ def main():
     #st.sidebar.subheader("Debug box1")
     st.sidebar.text_area("cwd", value=cwd, height=20)
 
-    if 'PORTFOLIO' in cwd:
-        pth = cwd.split('PORTFOLIO')[1]
-    else:
-        pth = cwd.split('portfolio')[1]
-    pth = Path(pth)    
+    # if 'PORTFOLIO' in cwd:
+    #     pth = cwd.split('PORTFOLIO')[1]
+    # else:
+    #     pth = cwd.split('portfolio')[1]
+    # pth = Path(pth)    
     
     #pth = 'PODCAST/1/'
     #st.sidebar.subheader("Debug box2")
@@ -121,7 +121,7 @@ def main():
     
     st.title("🎙️ Week's Pod Spark!")
     
-    available_podcast_info = create_dict_from_json_files('.')
+    available_podcast_info = create_dict_from_json_files('PODCAST/1/')
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
