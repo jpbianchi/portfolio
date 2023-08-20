@@ -7,7 +7,7 @@ import os
 def main():
 
     cwd1 = os.getcwd()
-    os.chdir(cwd1 + '/' + 'PODCAST/1')
+    os.chdir(cwd1) # + '/' + 'PODCAST/1')
     cwd = os.getcwd()
     
     #st.sidebar.subheader("Debug box1")
