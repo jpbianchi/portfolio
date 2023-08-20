@@ -7,7 +7,7 @@ import os
 def main():
 
     # cwd1 = os.getcwd()
-    # os.chdir(cwd1)
+    os.chdir(cwd + '/' + pth)
     cwd = os.getcwd()
     
     st.sidebar.subheader("Debug box1")
@@ -118,11 +118,11 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.image(pth + 'bg-image.jpg', use_column_width=True)
+    st.image('bg-image.jpg', use_column_width=True)
     
     st.title("🎙️ Week's Pod Spark!")
     
-    available_podcast_info = create_dict_from_json_files(cwd + '/' + pth)
+    available_podcast_info = create_dict_from_json_files('.')
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
