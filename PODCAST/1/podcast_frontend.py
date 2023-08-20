@@ -6,12 +6,12 @@ import os
 
 def main():
 
-    cwd = os.getcwd()
+    # cwd = os.getcwd()
     # os.chdir(cwd1) # + '/' + 'PODCAST/1')
     # cwd = os.getcwd()
     
     #st.sidebar.subheader("Debug box1")
-    st.sidebar.text_area("cwd", value=cwd, height=20)
+    # st.sidebar.text_area("cwd", value=cwd, height=20)
 
     # if 'PORTFOLIO' in cwd:
     #     pth = cwd.split('PORTFOLIO')[1]
@@ -270,7 +270,7 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
 def create_dict_from_json_files(folder_path):
-    st.sidebar.text_area("lisdir(folder_path):", value=os.listdir(folder_path), height=20)
+    st.sidebar.text_area("lisdir(folder_path):", value=os.listdir(folder_path), height=50)
     json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
     data_dict = {}
 
