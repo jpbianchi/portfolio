@@ -121,7 +121,7 @@ def main():
     
     st.title("🎙️ Week's Pod Spark!")
     
-    available_podcast_info = create_dict_from_json_files('PODCAST/1/')
+    available_podcast_info = create_dict_from_json_files('PODCAST/1')
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
