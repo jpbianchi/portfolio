@@ -300,3 +300,6 @@ if __name__ == '__main__':
     main()
 
 # get into venv and run streamlit run podcast_frontend.py --server.allowRunOnSave True
+# the rss link for my podcast (Coinbase L2 with Jesse Pollak) is
+# https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml?token=GHSAT0AAAAAACGBBLW7ASY24ITLP4RGT4LIZHCW4BA
+# it must be created in Github, in the 'raw' mode 
