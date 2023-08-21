@@ -117,7 +117,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.image('bg-image.jpg', use_column_width=True)
+    st.image('PODCAST/1/bg-image.jpg', use_column_width=True)
     
     st.title("🎙️ JPB's Favorite Podcasts!")
     
