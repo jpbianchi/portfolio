@@ -119,7 +119,7 @@ def main():
     )
     st.image('bg-image.jpg', use_column_width=True)
     
-    st.title("🎙️ Week's Pod Spark!")
+    st.title("🎙️ JPB's Favorite Podcasts!")
     
     available_podcast_info = create_dict_from_json_files('.')
 
