@@ -6,12 +6,12 @@ import os
 
 def main():
 
-    # cwd = os.getcwd()
+    cwd = os.getcwd()
     # os.chdir(cwd1) # + '/' + 'PODCAST/1')
     # cwd = os.getcwd()
     
-    #st.sidebar.subheader("Debug box1")
-    # st.sidebar.text_area("cwd", value=cwd, height=20)
+    st.sidebar.subheader("Debug box1")
+    st.sidebar.text_area("cwd", value=cwd, height=20)
 
     # if 'PORTFOLIO' in cwd:
     #     pth = cwd.split('PORTFOLIO')[1]
@@ -19,7 +19,7 @@ def main():
     #     pth = cwd.split('portfolio')[1]
     # pth = Path(pth)    
     
-    #pth = 'PODCAST/1/'
+    pth = 'PODCAST/1/'
     #st.sidebar.subheader("Debug box2")
     #st.sidebar.text_area("pth:", value=cwd + '/' + pth, height=20)
     
@@ -117,11 +117,11 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.image('PODCAST/1/bg-image.jpg', use_column_width=True)
+    st.image(pth + 'bg-image.jpg', use_column_width=True)
     
     st.title("🎙️ JPB's Favorite Podcasts!")
     
-    available_podcast_info = create_dict_from_json_files('PODCAST/1')
+    available_podcast_info = create_dict_from_json_files(pth)
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
@@ -271,12 +271,12 @@ def main():
 
 def create_dict_from_json_files(folder_path):
     #st.sidebar.text_area("lisdir(folder_path):", value=os.listdir(folder_path), height=50)
-    json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
+    json_files = [folder_path + f for f in os.listdir(folder_path) if f.endswith('.json')]
     data_dict = {}
 
     for file_name in json_files:
         file_path = file_name
-        #st.sidebar.text_area("filename:", value=file_path, height=50)
+        # st.sidebar.text_area("filename:", value=file_path, height=50)
         with open(file_path, 'r') as file:
             try:
                 podcast_info = json.load(file)
@@ -299,7 +299,8 @@ def process_podcast(url):
 if __name__ == '__main__':
     main()
 
-# get into venv and run streamlit run podcast_frontend.py --server.allowRunOnSave True
+# get into venv and run streamlit run PODCAST/1/podcast_frontend.py --server.allowRunOnSave True
+# we must run it from the root folder, not from the PODCAST/1 folder because that's what streamlit will do
 # the rss link for my podcast (Coinbase L2 with Jesse Pollak) is
 # https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml?token=GHSAT0AAAAAACGBBLW7ASY24ITLP4RGT4LIZHCW4BA
 # it must be created in Github, in the 'raw' mode 
