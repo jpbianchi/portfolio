@@ -6,20 +6,26 @@ import os
 
 def main():
 
-    cwd = os.getcwd() 
+    # cwd = os.getcwd() # it's a link to the portfolio folder (/volumes/data/dropbox.../portofolio or mnt/src/portfolio online)
     # os.chdir(cwd1) # + '/' + 'PODCAST/1')
     # cwd = os.getcwd()
     
-    st.sidebar.subheader("Debug box1")
-    st.sidebar.text_area("cwd", value=cwd, height=20)
+    #st.sidebar.subheader("Debug box1")
+    #st.sidebar.text_area("cwd", value=cwd, height=20)
 
+    # the following will not work on streamlit because it starts from the repo folder
+    # even if we tell it to run this backend file located in the PODCAST/1 folder
+    # so pth ends up being '.'
     # if 'PORTFOLIO' in cwd:
     #     pth = cwd.split('PORTFOLIO')[1]
     # else:
     #     pth = cwd.split('portfolio')[1]
     # pth = Path(pth)    
     
-    pth = 'PODCAST/1/'
+    pth = 'PODCAST/1/'  
+    # we must specify path to podcasts from the root since streamlit runs from the root folder, 
+    # even if it can start a file in a folder
+    
     #st.sidebar.subheader("Debug box2")
     #st.sidebar.text_area("pth:", value=cwd + '/' + pth, height=20)
     
