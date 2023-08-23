@@ -141,7 +141,7 @@ def main():
         podcast_info = available_podcast_info[selected_podcast]
 
         # Right section - Newsletter content
-        st.header("Get ready for a week of captivating podcast highlights that promise listening bliss! 🎧")
+        st.header("Your most captivating podcast right here! 🎧")
 
         # Display the podcast title
         st.subheader("Episode Title")
@@ -232,15 +232,19 @@ def main():
     url = st.sidebar.text_input("Link to RSS Feed")
 
     process_button = st.sidebar.button("Process Podcast Feed")
-    st.sidebar.markdown("**Note**: Podcast processing can take upto 5 mins, please be patient.")
+    st.sidebar.markdown("**Note**: Podcast processing can take several minutes, please be patient.")
 
     if process_button:
 
         # Call the function to process the URLs and retrieve podcast guest information
         podcast_info = process_podcast(url)
 
+        if podcast_info is None:
+            st.header('Sorry, we could not process your podcast feed. Please try again.')
+            return
+
         # Right section - Newsletter content
-        st.header("Get ready for a week of captivating podcast highlights that promise listening bliss! 🎧")
+        st.header("Here's your podcast summary! 🎧")
 
         # Display the podcast title
         st.subheader("Episode Title")
@@ -310,3 +314,4 @@ if __name__ == '__main__':
 # the rss link for my podcast (Coinbase L2 with Jesse Pollak) is
 # https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml?token=GHSAT0AAAAAACGBBLW7ASY24ITLP4RGT4LIZHCW4BA
 # it must be created in Github, in the 'raw' mode 
+# be careful, for some reason, the link to the raw file changed (despite me not changing it) so it breaks the backend since you give a link to nothing
