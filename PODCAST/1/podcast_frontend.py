@@ -315,3 +315,6 @@ if __name__ == '__main__':
 # https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml?token=GHSAT0AAAAAACGBBLW7ASY24ITLP4RGT4LIZHCW4BA
 # it must be created in Github, in the 'raw' mode 
 # be careful, for some reason, the link to the raw file changed (despite me not changing it) so it breaks the backend since you give a link to nothing
+# also, I found out a way to make google drive present a file as 'raw', by using it's FILE_ID
+# get the file_id from the shareable link (1ziufPtXCLdaAkqMWsdea6uFitAYNRtax), and use it as follows
+# https://drive.google.com/uc?export=download&id=1ziufPtXCLdaAkqMWsdea6uFitAYNRtax (still doesn't work... )
