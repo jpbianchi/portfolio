@@ -123,7 +123,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    st.image(pth + 'bg-image.jpg', use_column_width=True)
+    st.image(pth + 'images/bg-image.jpg', use_column_width=True)
     
     st.title("🎙️ JPB's Favorite Podcasts!")
     

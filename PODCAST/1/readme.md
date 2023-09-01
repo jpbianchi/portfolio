@@ -23,11 +23,13 @@ Here's the result for the Coinbase podcast about their new BASE Layer 2
 
 <!--
 https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/images/coinbase_base.png
-should work but doesn't
+doesn't work if repo is private
+token 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
+https://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@raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/images/coinbase_base.png
 -->
 
 <p align="center">
-  <img src="images/coinbase_base.png" width="700px"/>
+  <img src="https://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@raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/images/coinbase_base.png" width="700px"/>
 </p>
 
 ##### Modal provides an easy to use interface to run backend code on a GPU cloud
