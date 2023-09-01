@@ -22,7 +22,7 @@ It was first done in a notebook, then the backend code was upload to a GPU clust
 Here's the result for the Coinbase podcast about their new BASE Layer 2
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/images/coinbase_base.png" width="700px"/>
+  <img src="images/coinbase_base.png" width="700px"/>
 </p>
 
 ##### Modal provides an easy to use interface to run backend code on a GPU cloud
