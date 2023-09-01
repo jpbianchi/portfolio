@@ -21,6 +21,11 @@ It was first done in a notebook, then the backend code was upload to a GPU clust
 
 Here's the result for the Coinbase podcast about their new BASE Layer 2
 
+<!--
+https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/images/coinbase_base.png
+should work but doesn't
+-->
+
 <p align="center">
   <img src="images/coinbase_base.png" width="700px"/>
 </p>
@@ -31,7 +36,7 @@ Here's the result for the Coinbase podcast about their new BASE Layer 2
   <img src="images/modal_backend.png" width="700px"/>
 </p>
 
-It took about 9' and 0.5$$ \ (modal gives $30 of free GPU / month)
+It took about 9' and 0.5\$ (modal gives \$30 of free GPU / month)
 
 <p align="center">
   <img src="images/GPU_cost.png" height="400px" width="600px"/>

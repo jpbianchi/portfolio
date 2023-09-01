@@ -312,10 +312,8 @@ if __name__ == '__main__':
 # get into venv and run streamlit run PODCAST/1/podcast_frontend.py --server.allowRunOnSave True
 # we must run it from the root folder, not from the PODCAST/1 folder because that's what streamlit will do
 # the rss link for my podcast (Coinbase L2 with Jesse Pollak) is
+# https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml 
+# it should work but I'm getting a 404 error 
 # https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml?token=GHSAT0AAAAAACGBBLW7ASY24ITLP4RGT4LIZHCW4BA
-# it must be created in Github, in the 'raw' mode 
+# it must be created in Github, in the 'raw' mode, but there is a caveat
 # be careful, for some reason, the link to the raw file changed (despite me not changing it) so it breaks the backend since you give a link to nothing
-
-
-
-
