@@ -127,7 +127,7 @@ def main():
     
     st.title("🎙️ JPB's Favorite Podcasts!")
     
-    available_podcast_info = create_dict_from_json_files(pth)
+    available_podcast_info = create_dict_from_json_files(pth + 'podcasts/')
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
@@ -290,7 +290,7 @@ def create_dict_from_json_files(folder_path):
         with open(file_path, 'r') as file:
             try:
                 podcast_info = json.load(file)
-                st.sidebar.text_area("Read file correctly:", value=file_path, height=10)
+                # st.sidebar.text_area("Read file correctly:", value=file_path, height=10)
             except json.JSONDecodeError:
                 # the twiml AI podcast.json file was bad 
                 st.sidebar.text_area("Error reading file:", value=file_path, height=10)
@@ -313,7 +313,7 @@ if __name__ == '__main__':
 # we must run it from the root folder, not from the PODCAST/1 folder because that's what streamlit will do
 # the rss link for my podcast (Coinbase L2 with Jesse Pollak) is
 # https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml 
-# it should work but I'm getting a 404 error 
+# it should work but I'm getting a 404 error (repo is private)
 # https://raw.githubusercontent.com/jpbianchi/portfolio/main/PODCAST/1/anchor.fm_s_1bee9344_podcast_rss.xml?token=GHSAT0AAAAAACGBBLW7ASY24ITLP4RGT4LIZHCW4BA
 # it must be created in Github, in the 'raw' mode, but there is a caveat
-# be careful, for some reason, the link to the raw file changed (despite me not changing it) so it breaks the backend since you give a link to nothing
+# be careful, for some reason, the link to the raw file changes so it breaks the backend since you give a link to nothing
