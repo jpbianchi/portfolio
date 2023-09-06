@@ -21,7 +21,7 @@ The frontend was uploaded to streamlit.
 
 ##### Streamlit is an obvious choice to transfer the python frontend code from the notebook 
 
-You can run the app on Streamlit with [this link](jpb-podcast-transcribe.streamlit.app).
+You can run the app on Streamlit with [this link](https://jpb-podcast-transcribe.streamlit.app).
 Please don't exhaut my free GPU time, and start with the pre-loaded podcasts.
 
 Here's the result for the Coinbase podcast about their new BASE Layer 2
