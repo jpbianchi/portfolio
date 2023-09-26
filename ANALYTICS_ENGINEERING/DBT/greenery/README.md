@@ -1,11 +1,11 @@
 # ANALYTICS ENGINEERING
 
-This project uses DBT to analyse the performance of the Greenery website using their Snowflake database.
+This project uses DBT to analyse the performance of the Greenery website using their Snowflake database and deploys the dashboard on SigmaComputing.
 
 Technologies used:
 - DBT (models, macros, ninjas, exposures, snapshots)
 - Snowflake
-- Sigmacomputing (dashboard)
+- Sigmacomputing (dashboard, deployment)
 
 ## Greenery database structure
 
